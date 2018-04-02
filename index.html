@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Alexander Molchanov" />
+	<title>Сайт-портфолио</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/media.css">
+	<link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="assets/js_jquery/jquery-3.2.1.min.js"></script>
+	<script>
+		$(function(){
+			$("#menu").click(function(){
+				$(".wrapper").slideToggle(500);
+			})
+		});
+		$(function(){
+			$(".wrapper").click(function(){
+				$(".wrapper").slideToggle(500);
+			})
+		});
+		$(function(){
+			$("#menu").hover(function(){
+				$(".line").css("background-color","lightgrey");
+			},function(){
+				$(".line").css("background-color","#113472");
+			})
+		});
+		$(function(){
+			$(".wrapper").on("click","a",function(event){
+				event.preventDefault();
+				//Отменяем дефолтный переход.
+
+				var id = $(this).attr('href'),
+				//забираем идентификатор бока с атрибута href
+
+				top = $(id).offset().top;
+				//узнаем высоту от начала страницы до блока на который ссылается якорь
+
+				//анимируем переход на расстояние - top за 1500 мс
+
+				$("body,html").animate({scrollTop: top}, 1500);
+			});
+		});
+		$(function(){
+			$("#href").on("click","a",function(event){
+				event.preventDefault();
+				var id = $(this).attr('href'),
+				top = $(id).offset().top;
+				$("body,html").animate({scrollTop: top}, 1500);
+			})
+		});
+
+
+	</script>
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="navmenu"> <a href="#about-me">about me</a> </div>
+		<div class="navmenu"> <a href="#resume">CV</a></div>
+		<div class="navmenu"> <a href="#links">contacts</a></div>
+		<div class="navmenu"><a href="#footer">Authors</a></div>
+	</div>
+	<header>
+		<div id="href">
+			<a href="#header">TOP</a>
+		</div>
+		<div id="header">
+			<div id="logo"></div>
+			<div id="menu">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</div>	
+	</header>
+
+	<section id="main-section">
+			<div id="Front">
+				Alexander Molchanov
+				<hr/>
+			</div>
+
+			<div class="web-developer">
+				Front-End Developer
+			</div>
+	</section>
+
+	<section id="about-me">
+		<div id="text">About Me</div>
+		<div id="about-main">
+			<div class="diff">
+				<div id="personal">Personal Information</div>
+				<div id="rest">
+					<p id="name">Alexander Molchanov</p>
+					<div id=Knowledge>
+						<p>Web-development:</p>
+						<p>Html-coding, css, JavaScript</p>
+						<p>JQuery, Bootstrap</p>
+					</div>
+					<div id="language">
+						<p>Language:</p>
+						<p>Knowledge of English(Level C1)</p>
+					</div>
+					<div id="birth">
+						<p>Date of Birth:<span>21.01.99</span></p>
+					</div>
+					<div id="contacts">
+						<p>Contacts:</p>
+						<p>PN:<span>+38095-561-55-97</span></p>
+						<p>Email:<span>sasha182199@gmail.com</span></p>
+						<p>City:<span>Kyiv</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="diff">
+				<div id="photo"></div>
+			</div>
+			<div class="diff">
+				<div id="A_little_bit">A few words about myself</div>
+				<div id="words">
+					<p>So, first of all, let me introduce myself. My name is Alex. I'm 19 years old.
+					I was born in Kyiv, Ukraine. I can't really tell a lot about my life. I'd been playing football for 9 years. Won several medals. What is more, i've been studying English for 5 years. I'm very interested in it. I have visited London, got there a certificate. Nowadays i have C1 level but,of course, i want to improve it. My hobby is fishing. Yes,i really like it. Last year i've been learning web development. I find it quite interesting and profitable. Now, i'm studying at "IT-STEP" , a computer academy. However, i can't tell that i really love my university. I've made a mistake, when i was choosing a speciality. So, that's probably all that i wanted to tell you about me.</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section id="resume">
+		<div id="text-resume">CV</div>
+		<div id="inblock">
+			<div class="ininfo">
+				<div id="education">Education</div>
+				<div id="text-education">
+					<p>University: State University of Telecommunications;</p>
+					<p>Additional Education:"IT-STEP" academy;</p>
+					<p>Got a certifcate of HTML&CSS</p>
+				</div>
+			</div>
+			<div class="ininfo">
+				<div id="Work">Work</div>
+				<div id="text-work">
+					<p>A few works on freelance;</p>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="links">
+		<div id="contact-me">Contact me</div>
+		<div id="networks">
+			<div class="mylinks">
+				<ul>
+					<i class="fa fa-skype"><p>sasha.molchanov18</p></i>
+					<i class="fa fa-facebook-official"><p>Sasha Molchanov</p></i>
+
+				</ul>
+			</div>
+			<div class="mylinks">
+				<ul>
+					<i class="fa fa-telegram"><p>+38095-561-55-97</p></i>
+					<i class="fa fa-whatsapp"><p>+38095-561-55-97</p></i>
+
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer">
+		<div id="footer-info">
+			<div>
+				<p class="over">Written by <p>Alex Molchanov</p></p>
+			</div>
+			<div>
+				<p class="over">Designed by <p>Dasha Streltsova</p></p>
+			</div>
+		</div>
+	</section>
+	
+
+</body>
+</html>

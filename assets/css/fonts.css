@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Intro-Inline';
+    src: url('../fonts/Intro-Inline.eot');
+    src: url('../fonts/Intro-Inline.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Intro-Inline.woff2') format('woff2'),
+         url('../fonts/Intro-Inline.woff') format('woff'),
+         url('../fonts/Intro-Inline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PhosphateSolid';
+    src: url('../fonts/PhosphateSolid.eot');
+    src: url('../fonts/PhosphateSolid.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PhosphateSolid.woff2') format('woff2'),
+         url('../fonts/PhosphateSolde.woff') format('woff'),
+         url('../fonts/PhosphateSolid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+         url('../fonts/MyriadPro-Regular.woff') format('woff'),
+         url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
